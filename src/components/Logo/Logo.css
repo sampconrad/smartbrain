@@ -1,0 +1,23 @@
+.back-logo {
+	background-image: url("./cpu.png");
+	width: 200px;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.front-logo {
+	/* ! black logo ! */
+	filter: opacity(0.7) invert(100%) saturate(0%) brightness(0%);
+	transform: translateZ(40px);
+	transition: transform 250ms;
+	transition-timing-function: ease-in-out;
+}
+
+.front-logo:hover {
+	/* ! colorful logo ! */
+	filter: opacity(1) invert(10%) sepia(10%) saturate(3461%) hue-rotate(380deg)
+		brightness(100%) contrast(100%);
+	transform: translateZ(100px);
+}

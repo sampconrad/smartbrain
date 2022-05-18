@@ -1,0 +1,10 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url(titleFont.ttf);
+}
+
+.title {
+	filter: opacity(0.6);
+	font-size: 80px;
+	font-family: myFirstFont;
+}
