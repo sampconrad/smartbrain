@@ -27,7 +27,7 @@ function ParticleBackground() {
 							},
 							onHover: {
 								enable: true,
-								mode: 'attract',
+								mode: 'repulse',
 								parallax: { enable: false, force: 60, smooth: 10 },
 							},
 							resize: true,
@@ -36,7 +36,10 @@ function ParticleBackground() {
 							push: {
 								quantity: 4,
 							},
-							attract: { distance: 300, duration: 0.4, factor: 5 },
+							repulse: {
+								distance: 200,
+								duration: 0.4,
+							},
 						},
 					},
 					particles: {
@@ -58,7 +61,7 @@ function ParticleBackground() {
 							speed: 2,
 							straight: false,
 						},
-						number: { density: { enable: true, value_area: 800 }, value: 80 },
+						number: { density: { enable: true, value_area: 800 }, value: 60 },
 						opacity: {
 							anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
 							random: false,
