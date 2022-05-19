@@ -1,1 +1,3 @@
-# Frontend for the smartbrain project
+# smartbrain-api
+Frontend for the smartbrain project
+https://smartbrain-v3.herokuapp.com/
